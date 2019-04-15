@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<h1>SQL INNER JOIN</h1>
+<p>
+In SQL, the Keyword <i>INNER JOIN</i> is used to combine data from columns in multiple tables. It selects records that have 
+matching data in these tables <i>ON</i> matching entries from specified columns. For example, lets say we have two tables called
+Students and Teachers and each have a column called Name, which is the name of the student or teacher, and a column called 
+Color, which is the favorite color of the student or teacher. So, if you want to find all the teachers and students who's 
+favorite color is green you might have something like this: <br />
+<i>SELECT Students.Name, Teachers.Name, Students.Color<br />
+FROM Students<br />
+INNER JOIN Teachers<br />
+ON Students.Colors=Teachers.Colors<br />
+WHERE Color="green";</i><br />
+This commands SELECTs the names of students, names of teachers, and colors of students (although you could also select 
+colors of teahcers), FROM the table 'Students' and INNER JOINs it with 'Teachers' on the criteria that Student's Color
+matches Teacher's Color where their colors are green. This will return all the students and teacher's who's favorite 
+color is green.
+</p>
+
+</body>
+</html>
